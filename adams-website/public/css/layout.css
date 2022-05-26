@@ -311,6 +311,31 @@ ul#nav li.current a { color: #152238; }
    background: #152238;
 }
 
+.project-title{
+   font-size: 1.25em;
+}
+
+.project-info{
+   padding-top: 1em;
+   background: #152238;
+}
+
+.project-type.personal{
+   color: #7fb7e0;
+}
+
+.project-type.academic{
+   color: #e0b8ee;
+}
+
+.project-type.professional{
+   color: #FFD4B1;
+}
+
+.project-type.volunteer{
+   color: #FCADB0;
+}
+
 .project-description {
    padding-right: 2em;
 }
@@ -318,11 +343,12 @@ ul#nav li.current a { color: #152238; }
 .project-display-image{
    max-height:98%;
    max-width: 98%;
+   
 }
 
 .project-display{
    cursor: pointer;
-   border-radius: 5%;
+
 }
 
 .project-display-image-container{
@@ -330,6 +356,14 @@ ul#nav li.current a { color: #152238; }
    width: 215px;
    vertical-align: center;
    justify-items: stretch;
+   background: #152238;
+}
+
+.project-display-image{
+   align-self: center;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
 }
 
 #portfolio {
@@ -338,8 +372,7 @@ ul#nav li.current a { color: #152238; }
    padding-bottom: 60px;
 }
 #portfolio h1 {
-   font: 15px/24px 'opensans-semibold', sans-serif;
-   text-transform: uppercase;
+   font: 25px/30px 'opensans-semibold', sans-serif;
    letter-spacing: 1px;
    text-align: center;
    margin-bottom: 48px;

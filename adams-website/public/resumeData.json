@@ -1,15 +1,13 @@
 {
   "main": {
     "name":"Adam Courchesne",
-    "description":"Welcome! I developed this website using an open source template I found on GitHub to learn about web application development in ReactJS. Now, I use this website as the definitive archive of all of my relevant work experiences, educations, and projects",
+    "description":"Welcome! I developed this website using an open source template I found on GitHub to learn about web application development in ReactJS. Now, I use this website as the definitive archive of all of my relevant work experiences, education, and projects.",
     "headerimage":"headerimage4.jpg",
-    "image":"Adam C 2.jpg",
-    "bio":"Budding software developer, student, and Lego Star Wars collector. My current goals are to explore my options in the realm of biomedical engineering to establish what I'm really passionate about. My current professional interests include sports engineering, entrepreneurship and exercise science. (P.S. You might have noticed this is the same bio I use on my Linkedin. If you've taken the time to look at both my Linkedin AND my website, you should really consider reaching out to me)",
+    "image":"headshot.jpg",
+    "bio":"Budding software developer, student, and Lego collector. My current goals are to explore my options in the realm of biomedical engineering to establish what I'm really passionate about. My current professional interests include sports engineering, entrepreneurship and exercise science. You might have noticed this is the same bio I use on my Linkedin. If you've taken the time to look at both my Linkedin and my website, you should really consider reaching out to me.",
     "email": "courchesneadam@gmail.com",
     "alternativeemail": "acourche@uwaterloo.ca",
     "phone": "(705) 358-1785",
-    "github":"https://github.com/nordicgiant2/react-nice-resume",
-    "project":"https://github.com/nordicgiant2/react-nice-resume",
     "address":{
       "street":"1098 Premier Road",
       "city":"North Bay",
@@ -44,9 +42,9 @@
         "school":"University of Waterloo",
         "degree":"Candidate for BASc in Biomedical Engineering",
         "graduated":"Sept. 2019 - Apr. 2024",
-        "description":"I decided to come to the University of Waterloo for their coop program. I love the idea of gaining hands on experience closely related to the skills I'm developing in school. So far, I've learnt about the engineering design process, computer aided design, object oriented programming, numeric computing in MATLAB, circuit design and instrumentation, and prototyping using Arduinos.",
+        "description":"I decided to come to the University of Waterloo for their co-op program. I love the idea of gaining hands-on experience closely related to the skills I'm developing in school. So far, I've learnt about the engineering design process, computer aided design, object oriented programming, numeric computing in MATLAB, circuit design and instrumentation, embedded systems design, and prototyping using Arduinos.",
         "courseheader":"These are some courses I found interesting: ",
-        "courses": ["BME 122: Data Structures and Algorithms", "STV 205: Cybernetics and Society", "BME 294: Circuits, Instrumentation, and Measurements","BME 261: Prototyping, Simulation and Design"]
+        "courses": ["BME 122: Data Structures and Algorithms", "STV 205: Cybernetics and Society", "BME 294: Circuits, Instrumentation, and Measurements","BME 261: Prototyping, Simulation and Design","BME 393: Digital Systems"]
       }
     ],
     "work":[
@@ -54,14 +52,14 @@
         "company":"MetricAid",
         "title":"Software Developer/Digital Marketing Intern",
         "years":"May 2020 - December 2021",
-        "description":"I spent my first three coop terms at MetricAid. During my first term, I learnt the ropes in web application development using CSS, JS, HTML, Golang, and PostgreSQL. During my three coops I completed several major feature adds and countless tricky bug fixes. My proudest new feature was a rating system that let users give feedback on the service we provided. This came with a reporting screen that displayed all of the collected ratings, equipped with sorting and filtering functionality to boot. This feature became the third most used tool in the entire web application only a few months after it's release! During my third term, I also picked up the responsibility of managing the company newsletter. After the third newsletter I published, our audience had grown from 5726 to 8028 recipients.",
+        "description":"I spent my first three co-op terms at MetricAid. During my first term, I learnt the ropes in web application development using CSS, JS, HTML, Golang, and PostgreSQL. During my three coops I completed several major feature-adds and countless tricky bug fixes. My proudest new feature was a rating system that let users give feedback on the service the company provided. This project consisted of a reporting screen that displayed all of the collected ratings, equipped with sorting and filtering functionality to boot. This feature became the third most used tool in the entire web application only a few months after it's release! During my third term, I also picked up the responsibility of managing the company newsletter. After the third newsletter I published, our audience had grown from 5726 to 8028 recipients.",
         "website":"https://www.metricaid.com/news"
       },
       {
         "company":"Roots Canada",
         "title":"Sales Associate",
         "years":"April 2015 - September 2019",
-        "description":"If I had a dollar for every sweater I folded working at Roots, I wouldn't have needed a job in the first place. But in all seriousness, I developed a lot of experience managing inventory and selling product over my 4 year tenure with the company. I also got to practice my french language skills while working with french speaking customers."
+        "description":"If I had a dollar for every sweater I folded working at Roots, I wouldn't have needed a job in the first place. But in all seriousness, I developed a lot of experience managing inventory and selling products over my 4 year tenure with the company. I also got to practice my French language skills while working with French speaking customers."
       },
       {
         "company":"Duke of Edinburgh",
@@ -80,6 +78,10 @@
       {
         "user":"Brad Simard - MetricAid Development Manager",
         "text":"Adam demonstrates outstanding interpersonal skills that make it a treat to work with him."
+      },
+      {
+        "user":"Lora Webb - MetricAid CEO",
+        "text":"I could not manage our quarterly newsletters without Adam; his diligence, writing skills, attention to detail and good nature make him an incredibly valuable team member.  Adam continues to look for ways to improve our processes and the quality of deliverables and actively leads the development of our newsletter."
       }
     ]
   },
@@ -90,21 +92,25 @@
         "category":"Biomedical Design Project",
         "image":"motorneuron.jpg",
         "description":"In a prototyping and design course I took as part of my biomedical engineering undergraduate degree, I worked with a small team to produce a novel solution to peripheral neuropathy. Peripheral neuropathy is a condition in which damage to the peripheral nervous system causes numbness and pain in the lower limbs and hands. Our solution to this problem was a system in which a pressure sensitive sheet was connected to a foam shoe sole, and vibrating DC motors would generate a stimulus at the thigh corresponding to pressures applied at the foot. By the end of this project, I had learnt valuable lessons about time management, technical report writing, the engineering design process, writing code with the Arduino IDE, collaboration, circuit design, and interdisciplinary work by applying an engineering solution to a physiological problem space.",
+        "type":"Academic",
         "skills":"Engineering Design, Collaboration, Technical Writing, Project Management."
+        
       },
       {
         "title":"MetricAid Rating Tool",
         "category":"Proud Feature Add",
         "image":"ratings.jpg",
-        "description":"This is the ratings tool I had talked about in the resume section of my website. The image on the right shows the two modals that were used to prompt clients to rate their schedules, as well as an report addressing all of the ratings provided from clients, and an average rating for the selected time period. Depending on where you navigate to the report from, the data will already be filtered in context with the page you navigated from.",
+        "description":"This is the ratings tool I had talked about in the resume section of my website. The image on the right shows the reporting page I built. Depending on where you navigate to the report from, the filter on the right will already be populated with the relevant contextual information. Clicked on the column headers will sort the report based on the contents of that column.",
         "skills":"Web App Development, Frontend Development (JS, CSS, HTML), Database Management (PostgreSQL), Backend Development (Golang).",
+        "type":"Professional",
         "link":"https://www.metricaid.com/news/rate-my-schedule"
       },
       {
         "title":"This Website",
         "category":"Personal Project",
         "image":"website.jpg",
-        "description":"I developed this website as a way to learn ReactJS. I found an open source template online and modified it to serve my purposes. I wanted to take on a new project during one of my coop terms, but needed to have a foundational understanding of React to do the job right. Building this website gave me exactly that.",
+        "description":"I developed this website as a way to learn ReactJS. I found an open source template online and modified it to serve my purposes. I wanted to take on a new project during one of my co-op terms, but needed to have a foundational understanding of ReactJS to do the job right. Building this website gave me exactly that.",
+        "type":"Personal",
         "skills":"Web Development, ReactJS, UI design."
       },
       {
@@ -112,6 +118,7 @@
         "category":"Volunteer Work",
         "image":"playground.jpg",
         "description":"One of the projects I worked on while on a humanitarian trip in Costa Rica was this playground. The grass in the image used to be dirt, and inside that dirt were large tires filled with concrete to keep them in the ground. Once those were dug out, sod was placed along the ground and the playset was built around it. The outcome of this project was a safe space for the elementary school children to play on.",
+        "type":"Volunteer",
         "skills":"Collaboration, Landscaping, Hand Tools, Power Tools, Leadership."
       }
     ]

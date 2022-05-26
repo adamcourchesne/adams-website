@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import Fade from "react-reveal";
 
-class Footer extends Component {
-  render() {
-    if (!this.props.data) return null;
+function Footer(props) {
 
-    const networks = this.props.data.social.map(function (network) {
+    if (!props.data) return null;
+
+    console.log(props.data);
+
+    const networks = props.data.social.map(function (network) {
       return (
         <li key={network.name}>
           <a href={network.url}>
@@ -13,7 +15,7 @@ class Footer extends Component {
           </a>
         </li>
       );
-    });
+      });
 
     return (
       <footer>
@@ -43,6 +45,5 @@ class Footer extends Component {
       </footer>
     );
   }
-}
 
 export default Footer;

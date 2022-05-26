@@ -1,19 +1,29 @@
-import React, { Component } from "react";
+import React from "react";
 import ParticlesBg from "particles-bg";
-import Particles from "react-tsparticles";
-
+import {motion} from 'framer-motion/dist/es/index'
 import Fade from "react-reveal";
 
-class Header extends Component {
-  render() {
-    if (!this.props.data) return null;
+function HeaderNavItem(props) {
+  const headerListItem = {
+    rest: { scale: 1 },
+    hover: { scale: 1.1 },
+  }
 
-    const project = this.props.data.project;
-    const github = this.props.data.github;
-    const name = this.props.data.name;
-    const description = this.props.data.description;
-    const headerimage = "images/" + this.props.data.headerimage
+  return (
+    <motion.div 
+      variants={headerListItem} 
+      initial="rest"
+      whileHover="hover">
+        {props.label}
+    </motion.div>
+  )
+}
 
+function Header(props) {
+    if (!props.data) return null;
+
+    const name = props.data.name;
+    const description = props.data.description;
     
     return (
       <header id="home" >
@@ -31,31 +41,31 @@ class Header extends Component {
           <ul id="nav" className="nav">
             <li className="current">
               <a className="smoothscroll" href="#home">
-                Home
+                <HeaderNavItem label={"Home"}/>
               </a>
             </li>
 
             <li>
               <a className="smoothscroll" href="#about">
-                About
+                <HeaderNavItem label={"About"}/>
               </a>
             </li>
 
             <li>
               <a className="smoothscroll" href="#resume">
-                Resume
+                <HeaderNavItem label={"Resume"}/>
               </a>
             </li>
 
             <li>
               <a className="smoothscroll" href="#portfolio">
-                Projects
+                <HeaderNavItem label={"Projects"}/>
               </a>
             </li>
 
             <li>
               <a className="smoothscroll" href="#testimonials">
-                Testimonials
+                <HeaderNavItem label={"Testimonials"}/>
               </a>
             </li>
           </ul>
@@ -67,7 +77,7 @@ class Header extends Component {
               <h1 className="responsive-headline">{name}</h1>
             </Fade>
             <Fade bottom duration={1200}>
-              <h3>{description}.</h3>
+              <h3>{description}</h3>
             </Fade>
           </div>
         </div>
@@ -80,6 +90,6 @@ class Header extends Component {
       </header>
     );
   }
-}
+
 
 export default Header;

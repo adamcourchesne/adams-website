@@ -1,8 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import Slide from "react-reveal";
 
-class Resume extends Component {
-  getRandomColor() {
+function Resume(props) {
+  
+  function getRandomColor() {
     let letters = "0123456789ABCDEF";
     let color = "#";
     for (let i = 0; i < 6; i++) {
@@ -11,10 +12,9 @@ class Resume extends Component {
     return color;
   }
 
-  render() {
-    if (!this.props.data) return null;
+    if (!props.data) return null;
     
-    const education = this.props.data.education.map(function (education) {
+    const education = props.data.education.map(function (education) {
       return (
         <div key={education.school}>
           <h3>{education.school}</h3>
@@ -29,7 +29,7 @@ class Resume extends Component {
       );
     });
 
-    const work = this.props.data.work.map(function (work) {
+    const work = props.data.work.map(function (work) {
       return (
         <div key={work.company}>
           <h3>{work.company}</h3>
@@ -44,6 +44,7 @@ class Resume extends Component {
               if (work.website != null){
                   return (
                     <div>
+                    <br></br>
                       <a href={work.website}> Here's a link to the MetricAid Blog. </a> 
                       Keep in mind, anything produced on this page in the recent past has been written, edited, or managed by myself.
                     </div>
@@ -58,9 +59,6 @@ class Resume extends Component {
       );
     });
 
-    const uwaterloo = "images/" + this.props.data.uwimage;
-    const metricaid = "images/" + this.props.data.maimage
-
     return (
       <section id="resume">
         <Slide left duration={1300}>
@@ -69,10 +67,6 @@ class Resume extends Component {
               <h1>
                 <span>Education</span>
               </h1>
-              {/* <img
-                className="display-images"
-                src={uwaterloo}
-              /> */}
               
             </div>
 
@@ -90,10 +84,6 @@ class Resume extends Component {
               <h1>
                 <span>Work</span>
               </h1>
-              {/* <img
-                className="display-images"
-                src={metricaid}
-              /> */}
             </div>
 
             <div className="nine columns main-col">{work}</div>
@@ -101,7 +91,7 @@ class Resume extends Component {
         </Slide>
       </section>
     );
-  }
+  
 }
 
 export default Resume;

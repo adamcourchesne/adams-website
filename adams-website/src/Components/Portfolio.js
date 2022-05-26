@@ -1,16 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Fade from "react-reveal";
+import {motion} from 'framer-motion/dist/es/index'
 import Link from '@mui/material/Link';
 
 let id = 0;
-class Portfolio extends Component {
-  render() {
-    if (!this.props.data) return null;
+function Portfolio(props) {
+    if (!props.data) return null;
 
-    const projects = this.props.data.projects.map(function (projects) {
+    const projects = props.data.projects.map(function (projects) {
 
       return (
         <div key={id++} className="columns portfolio-item">
@@ -38,7 +38,7 @@ class Portfolio extends Component {
       </section>
     );
   }
-}
+
 
 const style = {
   position: 'relative',
@@ -68,18 +68,29 @@ function PortfolioModal(props) {
     return null;
   }
 
+  const porfolioGridItem = {
+    rest: { scale: 1 },
+    hover: { scale: 1.1 },
+  }
+  
+
   return (
     <div>
-      <div className="project-display item-wrap" onClick={handleOpen}>
-        <div className="project-display-image-container" 
-          style={{  
-          backgroundImage: "url(" + projectImage + ")",
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-          }}>
-        </div>
-        <div className="project-title" style={{ textAlign: "center" }}>{props.projects.title}</div>
-      </div>
+      <motion.div 
+        style={{willChange: 'transform'}}
+        variants={porfolioGridItem} 
+        initial="rest"
+        whileHover="hover">
+          <div className="project-display item-wrap" onClick={handleOpen}>
+            <div className="project-display-image-container">
+              <img className="project-display-image" src={projectImage} alt=""/>
+            </div>
+            <div className="project-info">
+              <div className={"project-type " + props.projects.type.toLowerCase()}> {props.projects.type}</div>
+              <div className="project-title">{props.projects.title}</div>
+            </div>
+          </div>
+      </motion.div>
 
       <Modal
         open={open}
@@ -89,10 +100,10 @@ function PortfolioModal(props) {
       >
         <Box sx={style}>
           <Box sx={{width:'50%'}} className="project-description">
-            <Typography id="modal-modal-title" variant="h2" component="h2">
+            <Typography id="modal-modal-title" variant="h1" component="h2" gutterBottom>
             {props.projects.title}
             </Typography>
-            <Typography id="modal-modal-description" variant="subtitle1" sx={{fontSize: '15px'}}>
+            <Typography id="modal-modal-description" variant="h3" gutterBottom >
             Skills Developed: {props.projects.skills}
             </Typography>
             <Typography id="modal-modal-description" variant="body1" sx={{fontSize: '15px'}}>
@@ -101,7 +112,7 @@ function PortfolioModal(props) {
             <IsLink link={props.projects.link}/>
           </Box>
           <Box sx={{width:'50%', display: 'flex'}} className='project-image'>
-            <img style={{alignSelf: 'center'}} src={projectImage}/>
+            <img style={{alignSelf: 'center'}} src={projectImage} alt=""/>
           </Box>
         </Box>
       </Modal>
