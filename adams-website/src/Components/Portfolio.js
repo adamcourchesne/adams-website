@@ -1,10 +1,14 @@
 import React from "react";
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
 import Fade from "react-reveal";
 import {motion} from 'framer-motion/dist/es/index'
-import Link from '@mui/material/Link';
+import { Carousel } from 'react-responsive-carousel';
+import Dialog from '@mui/material/Dialog';
+import DialogContent from '@mui/material/DialogContent';
+import DialogTitle from '@mui/material/DialogTitle';
+import { Grid, IconButton } from "@mui/material";
+import CloseIcon from '@mui/icons-material/Close';
+
+
 
 let id = 0;
 function Portfolio(props) {
@@ -39,40 +43,31 @@ function Portfolio(props) {
     );
   }
 
-
-const style = {
-  position: 'relative',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  bgcolor: 'background.paper',
-  boxShadow: 24,
-  p: 4,
-  display:'flex',
-  flexDirection: 'row',
-  width: '75%',
-};
-
 function PortfolioModal(props) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   let projectImage = "images/portfolio/" + props.projects.image;
 
-  function IsLink(props) {
-    const link = props.link;
-    if (link !== undefined) {
-      console.log('here');
-      return <Link href={link}>Learn More!</Link>;
-    }
-    return null;
-  }
-
   const porfolioGridItem = {
     rest: { scale: 1 },
     hover: { scale: 1.1 },
   }
-  
+
+  const skills = props.projects.skills;
+  const skillsList = skills.map((skill) =>
+    <li style={{marginLeft: "2em"}}>{skill}</li>
+  );
+
+  let carouselSlides = [];
+  for (let i = 0; i < props.projects.carouselImages.length; i++) {
+    carouselSlides.push(
+      <div className="carousel-image-container">
+        <img src={"images/portfolio/" + props.projects.carouselImages[i]} alt="" className="project-display-image carousel" />
+        <p className="legend">{props.projects.carouselCaptions[i]}</p>
+      </div>
+    );
+  }
 
   return (
     <div>
@@ -92,30 +87,62 @@ function PortfolioModal(props) {
           </div>
       </motion.div>
 
-      <Modal
+      <Dialog
         open={open}
+        id='portfolio'
         onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
+        scroll={'body'}
+        className="portfolio-dialog"
+        aria-labelledby="scroll-dialog-title"
+        aria-describedby="scroll-dialog-description"
+        maxWidth={'xl'}
       >
-        <Box sx={style}>
-          <Box sx={{width:'50%'}} className="project-description">
-            <Typography id="modal-modal-title" variant="h1" component="h2" gutterBottom>
-            {props.projects.title}
-            </Typography>
-            <Typography id="modal-modal-description" variant="h3" gutterBottom >
-            Skills Developed: {props.projects.skills}
-            </Typography>
-            <Typography id="modal-modal-description" variant="body1" sx={{fontSize: '15px'}}>
-            {props.projects.description}
-            </Typography>
-            <IsLink link={props.projects.link}/>
-          </Box>
-          <Box sx={{width:'50%', display: 'flex'}} className='project-image'>
-            <img style={{alignSelf: 'center'}} src={projectImage} alt=""/>
-          </Box>
-        </Box>
-      </Modal>
+        <DialogTitle>
+          <Grid container>
+            <Grid item xs={8}>
+              <h3 className='dialog-header-text'>{props.projects.title}</h3>
+              <h2 style={{paddingBottom: '0'}} className={"dialog-header-text project-type " + props.projects.type.toLowerCase()}>{props.projects.category}</h2>
+            </Grid>
+            <Grid item xs={2}>
+              <IconButton
+                aria-label="close"
+                onClick={handleClose}
+                sx={{
+                  position: 'absolute',
+                  right: 8,
+                  top: 8,
+                  color: '#152238',
+                }}
+               >
+                <CloseIcon sx={{ fontSize: "35px" }}/>
+              </IconButton>
+            </Grid>
+          </Grid>
+        </DialogTitle>
+        <DialogContent>
+          <Grid 
+              container 
+              justifyContent="center" 
+              alignItems="center"
+            >
+            <Grid item xs={12} style={{maxWidth: '60%'}}>
+              <Carousel>
+                {carouselSlides}
+              </Carousel>
+            </Grid>
+          </Grid>
+          <Grid container spacing={3}>
+            <Grid item xs={2}>
+              <h4>Skills Developed:</h4>
+              <ul>{skillsList}</ul>
+            </Grid>
+            <Grid item xs={10}>
+              <h4>Description:</h4>
+              <p>{props.projects.description}</p>
+            </Grid>
+          </Grid>  
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }

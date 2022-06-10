@@ -91,35 +91,54 @@
         "title":"MotorNeuron",
         "category":"Biomedical Design Project",
         "image":"motorneuron.jpg",
+        "carouselImages":["motorneuron.jpg"],
+        "carouselCaptions":["Motorneuron MVP"],
         "description":"In a prototyping and design course I took as part of my biomedical engineering undergraduate degree, I worked with a small team to produce a novel solution to peripheral neuropathy. Peripheral neuropathy is a condition in which damage to the peripheral nervous system causes numbness and pain in the lower limbs and hands. Our solution to this problem was a system in which a pressure sensitive sheet was connected to a foam shoe sole, and vibrating DC motors would generate a stimulus at the thigh corresponding to pressures applied at the foot. By the end of this project, I had learnt valuable lessons about time management, technical report writing, the engineering design process, writing code with the Arduino IDE, collaboration, circuit design, and interdisciplinary work by applying an engineering solution to a physiological problem space.",
         "type":"Academic",
-        "skills":"Engineering Design, Collaboration, Technical Writing, Project Management."
+        "skills":["Engineering Design", "Collaboration", "Technical Writing", "Project Management"]
         
       },
       {
         "title":"MetricAid Rating Tool",
         "category":"Proud Feature Add",
         "image":"ratings.jpg",
-        "description":"This is the ratings tool I had talked about in the resume section of my website. The image on the right shows the reporting page I built. Depending on where you navigate to the report from, the filter on the right will already be populated with the relevant contextual information. Clicked on the column headers will sort the report based on the contents of that column.",
-        "skills":"Web App Development, Frontend Development (JS, CSS, HTML), Database Management (PostgreSQL), Backend Development (Golang).",
+        "carouselImages":["ratings.jpg"],
+        "carouselCaptions":["The reporting page used to view submitted ratings"],
+        "description":"This is the ratings tool I had talked about in the resume section of my website. Depending on where you navigate to the report from, the filter on the right will already be populated with the relevant contextual information. Clicking on the column headers will sort the report based on the contents of that column.",
+        "skills":["Web App Development", "Frontend Development (JS, CSS, HTML)", "Database Management (PostgreSQL)", "Backend Development (Golang)"],
         "type":"Professional",
         "link":"https://www.metricaid.com/news/rate-my-schedule"
       },
       {
         "title":"This Website",
-        "category":"Personal Project",
+        "category":"Personal Development Project",
         "image":"website.jpg",
+        "carouselImages":["website.jpg"],
+        "carouselCaptions":["The landing page of the website (but you already knew that)"],
         "description":"I developed this website as a way to learn ReactJS. I found an open source template online and modified it to serve my purposes. I wanted to take on a new project during one of my co-op terms, but needed to have a foundational understanding of ReactJS to do the job right. Building this website gave me exactly that.",
         "type":"Personal",
-        "skills":"Web Development, ReactJS, UI design."
+        "skills":["Web App Development", "Frontend Development (ReactJS, CSS)", "UI design"]
+      },
+      {
+        "title":"Computer Desk",
+        "category":"Personal Woodworking Project",
+        "image":"desk.jpg",
+        "carouselImages":["desk.jpg", "desk-blueprint.jpg", "desk-blueprint-trial.jpg"],
+        "carouselCaptions":["Finished desk", "3D model of the finished desk made in Onshape", "3D model of one of my first designs. I didn't end up following through with this because the custom metal frame would be too expensive"],
+        "description":"I wanted an L-shaped desk for my room, but the size I needed wasn't easy to find online. So, I decided to make my own. I designed the desk using Onshape, then bought enough maple to build the desktop and got the three legs already made through my lumber supplier. After prepping the maple using a planar and a hand saw as a jointer, I laminated the boards together with wood glue and biscuits. I then went around the base of the desktop using a 45 degree chamfer bit on my router. Finally, I finished the desktop with about 6 coats of Varathane and attached the legs.",
+        "type":"Personal",
+        "skills":["Computer-Aided Design (CAD)", "Preparing Rough Lumber", "Resourcefullness", "Power Tools"]
+        
       },
       {
         "title":"Playground",
         "category":"Volunteer Work",
         "image":"playground.jpg",
+        "carouselImages":["playground.jpg"],
+        "carouselCaptions":["Finished playground"],
         "description":"One of the projects I worked on while on a humanitarian trip in Costa Rica was this playground. The grass in the image used to be dirt, and inside that dirt were large tires filled with concrete to keep them in the ground. Once those were dug out, sod was placed along the ground and the playset was built around it. The outcome of this project was a safe space for the elementary school children to play on.",
         "type":"Volunteer",
-        "skills":"Collaboration, Landscaping, Hand Tools, Power Tools, Leadership."
+        "skills":["Collaboration", "Landscaping", "Hand Tools", "Power Tools", "Leadership"]
       }
     ]
   }
