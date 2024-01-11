@@ -1,0 +1,220 @@
+{
+  "main": {
+    "name":"Adam Courchesne",
+    "description":"Welcome! I developed this website using an open source template I found on GitHub to learn about web application development in ReactJS. Now, I use this website as the definitive archive of all of my relevant work experiences, education, and projects.",
+    "headerimage":"headerimage4.jpg",
+    "image":"headshot.jpg",
+    "bio":"I am a fourth year biomedical engineering student at the University of Waterloo, and currently a software Engineer for Zynga. My current goals are to find innovative ways of applying my experience as an engineering student and developer to solve biomedical problems. My professional background is in software development, but I'm looking for opportunities to apply the myriad skills I've learnt throughout my degree and personal projects, like engineering design and prototyping. I'm passionate about building things, as shown by my extensive lego collection and numerous woodworking projects.",
+    "email": "courchesneadam@gmail.com",
+    "alternativeemail": "acourche@uwaterloo.ca",
+    "phone": "(705) 358-1785",
+    "address":{
+      "street":"1098 Premier Road",
+      "city":"North Bay",
+      "state":"Ontario",
+      "zip": "P1A 2J1"
+    },
+    "website": "website-logo.ico",
+    "resumedownload":"adams-resume.pdf",
+    "social":[
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/adamcourchesne",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"instagram",
+        "url":"https://www.instagram.com/adamcourchesne/",
+        "className":"fa fa-instagram"
+      },
+      {
+        "name":"github",
+        "url":"https://github.com/adamcourchesne",
+        "className":"fa fa-github"
+      }
+    ]
+  },
+  "resume":{
+    "uwimage":"uwaterloo.png",
+    "maimage":"metricaid.png",
+    "ebimage":"ebutterfly.png",
+    "education":[
+      {
+        "school":"University of Waterloo",
+        "degree":"Candidate for BASc in Biomedical Engineering",
+        "graduated":"Sept. 2019 - Apr. 2024",
+        "description":"I decided to come to the University of Waterloo for their co-op program. I love the idea of gaining hands-on experience closely related to the skills I'm developing in school. So far, I've learnt about the engineering design process, computer aided design, object oriented programming, numeric computing in MATLAB, circuit design and instrumentation, embedded systems design, and prototyping using Arduinos.",
+        "courseheader":"These are some courses I found interesting: ",
+        "courses": ["BME 122: Data Structures and Algorithms", "BME 386: Physics of Medical Imaging", "BME 294: Circuits, Instrumentation, and Measurements","BME 261: Prototyping, Simulation and Design","BME 393: Digital Systems"]
+      }
+    ],
+    "work":[
+      {
+        "company":"eButterfly",
+        "title":"React and iOS Developer",
+        "years":"May 2022 - August 2022",
+        "description":"I worked at eButterfly for my 4th co-op term. My time with eButterfly was balanced between three projects. First, I assisted in migrating their web application from Angular to React while developing new features and fixing bugs to meet a tight deadline for the global release of their large-scale platform. Second, I played an important role in getting their iOS application production ready as one of two developers actively working on the project in the months leading up to its release. Finally, I managed a team of five 1st year co-op students who also worked for eButterfly as part of the UW Accelerate program by leading daily scrums and helping with specific development problems when needed."
+      },
+      {
+        "company":"MetricAid",
+        "title":"Software Developer/Digital Marketing Intern",
+        "years":"May 2020 - December 2021",
+        "description":"Metricaid creates physician schedules for hundreds of hospitals across Canada, the USA, and Australia. As a result, their web application is accessed by thousands of users every day. I spent my first three co-op terms at MetricAid. During my first term, I learnt the ropes in web application development using CSS, JS, HTML, Golang, and PostgreSQL. In the second, I solidified my understanding of the same tech stack, and took on a project setting up the push notifications for their mobile app using AWS SNS. In my third and final term I wanted to learn some new tools so I developed a log-in and registration page using ReactJS and NodeJS while balancing bug fixes and feature adds on their main application. By the end of my time there, I completed several major feature-adds and countless tricky bug fixes used by thousands of clients in a large-scale codebase. My proudest new feature was a rating system that let users give feedback on the service the company provided. This project consisted of a reporting screen that displayed all of the collected ratings, equipped with sorting and filtering functionality to boot, as well as two modals which prompted the user to rate their schedule depending on when the last schedule had finished. This feature became the third most used tool in the entire web application only a few months after it's release! During my third term, I also picked up the responsibility of managing the company newsletter. After the third newsletter I published, our audience had grown from 5726 to 8028 recipients."
+      },
+      {
+        "company":"Roots Canada",
+        "title":"Sales Associate",
+        "years":"April 2015 - September 2019",
+        "description":"I developed a lot of experience managing inventory and selling products over my 4 year tenure with the company. I also got to practice my French language skills while working with French speaking customers. I still fold my sweaters and clothes the way they taught me to this day."
+      },
+      {
+        "company":"Duke of Edinburgh",
+        "title":"Volunteer",
+        "years":"April 2015 - September 2019",
+        "description":"I completed over 250 volunteer hours with the Duke of Edinburgh program and spent a month over two separate humanitarian trips renovating classrooms and community centers in a Costa Rican township and the surrounding area. By the end of my time with the program, I had received multiple Ontario Volunteer Service awards, and the Matt Peters Volunteer Service Award for demonstrating strong leadership qualities."
+      }
+    ]
+  },
+  "testimonials":{
+  "testimonials":[
+      {
+        "user":"Jeff Francom - MetricAid Chief Software Architect",
+        "text":"He strives for better implementations whenever possible and is not afraid to critique his prior work in order to gain a valuable learning experience."
+      },
+      {
+        "user":"Brad Simard - MetricAid Development Manager",
+        "text":"Adam demonstrates outstanding interpersonal skills that make it a treat to work with him."
+      },
+      {
+        "user":"Lora Webb - MetricAid CEO",
+        "text":"I could not manage our quarterly newsletters without Adam; his diligence, writing skills, attention to detail and good nature make him an incredibly valuable team member.  Adam continues to look for ways to improve our processes and the quality of deliverables and actively lead the development of our newsletter."
+      }
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"Ultrasound Imaging",
+        "category":"Biomedical Design Project",
+        "image":"complete.jpg",
+        "carouselImages":["D1-CADfile-final.png", "turret-schematic.png","D1-3Dprinted.jpeg", "printer-parts.png", "complete-schematic.png", "complete.jpg", "final-images.png"],
+        "carouselCaptions":[""],
+        "description":"In a physics of medical imaging course I took as part of my biomedical engineering undergraduate degree requirements, I was tasked with creating an ultrasonic imaging machine with a group of 4 other students. This was to be done using the Arduino HC-SR04 ultrasonic sensors and a single-pixel scanning method. The group completed two design iterations. In either iteration, the ultrasonic module was used to generate a distance to the nearest obstruction for each pixel, and a 2D pixel plot image of the samples was produced. For the first iteration, the single-pixel scanning method was achieved using a turret system. The Arduino circuit, 3D printed parts, and final product are shown in the images above. In the second iteration, the single pixel scanning method was achieved using a repurposed 3D printer. The Arduino circuit, 3D printed parts, and final product are also shown in the images above. I was responsible for writing the Arduino code that generated the distance measurements, controlled sample frequency, and sent data through the serial monitor. I was also responsible for writing the G-code to manipulate the 3D printer, and for creating the Python code that read the serial data, processed it into the right format, and generated a grayscale pixel plot image. Finally, I worked collaboratively with other group members to design and create the necessary Arduino circuits. The code I wrote as well as the final project report can be found on my Github.",
+        "challenges":"There were three main challenges encountered during the design of this project. First, we found that the turret system used in the first iteration would not be appropriate as the HC-SR04 sensor was unable to generate distance measurements beyond a rotation of 15 degrees. This, in addition to the limited precision of the 28BYJ-48 stepper motors, meant that a sufficient image resolution could not be achieved. The next step was to then create a 2D gantry system to increase image resolution. Initially, the group looked to order linear actuators, however time and cost constraints meant we would not be able to order new parts. I then had the idea to repurpose the 3D printer used to create the parts for our first iteration since the printer performed exactly the motions we needed. A friend of mine told me that 3D prints were controlled using G-code, so I got to work on figuring out how the commands worked and created a script which moved the extruder in the desired pattern. This created our second problem, as loops do not exist in G-code. Since we were aiming to repeat a similar movement in a sequence, it would be very tedious to write out each of the required lines of code every time we needed to change a parameter. To solve this problem, I wrote a JavaScript function to produce a string containing the necessary G-code based on parameters like the desired number of horizontal and vertical distance samples. The ultrasonic sensor was then fixed to the printer’s extruder using a 3D printed part, and we had built our camera. The final issue was found while processing the recorded distances in the python code. Since the single-pixel scanning performed by the printer was not controlled by the same code that controlled the ultrasonic sensor sample rate, an inconsistent number of samples would be taken for each row of pixels. To solve this, I had the idea of attaching triggers on each side of the printer to record the beginning and the end of each row of pixels. To handle the remaining discrepancies caused by the scanning speed of the extruder, different methods of data interpolation were tested and characterized. The details of this characterization can be found in the report mentioned above.",
+        "outcome": "The images generated and the corresponding objects used are shown in the final image above. These were among the best results in the class, and I am very proud of the way the project turned out. I learnt valuable lessons about prototyping, and making the most of the resources available. I also learnt some basic features of a new language (G-code) and got to practice writing code in Arduino, JavaScript, and Python. Additional information about project Bonus marks achieved by creating an ultrasonic signal with a piezoelectric ceramic can also be found in the report on Github.",
+        "type":"Academic",
+        "skills":["Python Development using the Serial, Numpy, and Matplotlib libraries", "G-code development", "Arduino code development", "Circuit design and soldering"]
+      },
+      {
+        "title":"Warehouse Wreckage",
+        "category":"Unreal Engine 5 (UE5) Game Development Project",
+        "image":"warehousewreckage.png",
+        "carouselImages":["warehousewreckage.png", "ww-level-blueprint.png"],
+        "carouselCaptions":["", "", ""],
+        "description":"I wanted to learn about game development so I picked up a library of courses from the Humble Bundle. To develop this game, I closely followed the examples from the course content and then implemented a few features of my own to help further develop the skills I had learnt. In Warehouse Wreckage, you are spawned into a warehouse loaded with 20 round projectiles. The objective is to knock over as many of the barrels, racks, pallets, and boxes before running out of ammo. Once you're out, the game resets so you can do it all over again. ",
+        "challenges":"The most challenging part of this project was dealing with the out of date instructions given in the course. Often, a method that was taught would no longer be supported in the most recent UE5 version, so I would have to find a workaround. An example of this was the method that was taught for importing components from projects purchased on the UE5 marketplace.",
+        "outcome": "By completing this project I learnt how UE5 blueprints can be used to control actors. For example, I used blueprints to rotate and translate the spawn orientation of a round projectile based on the orientation of the player model. I also learnt to leverage the UE5 physics engine and modify the collision meshes of the warehouse object models I used to create true destructive chaos.",
+        "type":"Personal",
+        "skills":["UE5 Blueprint basics: nodes, pins, targets", "UE5 Fundamentals: maps, actors, components, transforms, vectors", "Object Oriented Programming", "Collision Meshes"]
+      },
+      {
+        "title":"Deadlift Analysis",
+        "category":"MOCAP Research Project",
+        "image":"scaling.png",
+        "carouselImages":["scaling.png", "mocapSetup.png", "markers.png"],
+        "carouselCaptions":["", "", ""],
+        "description":"One of my interests is in sports engineering, and this project was an opportunity to explore that. I sought out to debunk the myth that deadlifting is a dangerous exercise, and failed. A partner and I used OpenSim, a program that allows for the analysis of the dynamics and kinematics of human motion, to create two deadlift simulations with good and bad form to showcase the joint reaction forces experienced in the lumbosacral region of the spine. To create these simulations, we needed to collect motion capture (MOCAP) data. We did so by using a colour isolating algorithm, and a series of bright green balls glued to my back. This gave us MOCAP data for the spine during a deadlift. In addition to this, we used an open source machine learning solution by Google known as MediaPipe Pose which gave us 3D markerless MOCAP data for the shoulders, arms, hips, and legs. We combined both datasets by performing matrix transformations to match their coordinate frames. Finally, we generate simulations in OpenSim, but were not able to collect the necessary data to simulate the muscle forces involved in a deadlift due to time and resource constraints.",
+        "challenges":"This was a difficult project, and we were faced with a few key challenges. That being said, one stood out above them all. The colour isolating algorithm produced 2D coordinates in one reference frame, whereas the MediaPipe Pose method produced 3D coordinates in a different reference frame. To solve this, we set the missing axis from the colour isolating algorithm method equal to a constant value corresponding to the midline of the body. Then, we performed rotations about each axis until the X, Y and Z axes matched up in both coordinate frames. Then, we had to scale the data from the 2D coordinate frame to match the other dataset, which we did by developing a ratio of meters:pixels using the aspect ratio of the screen used to watch the video results and known distances between the green markers.",
+        "outcome": "We weren't able to draw a solid conclusion from this analysis because of the muscle force data we were missing. However, we did learn a lot about computational biomechanics. We learnt about the difference between inverse kinematic and forward dynamic simulations, as well as the benefits of static optimization.",
+        "type":"Academic",
+        "skills":["Matrix Math", "MOCAP Data Collection", "Technical Writing", "OpenSim Physiological Modelling", "Computational Biomechanics"]
+      },
+      {
+        "title":"This Website",
+        "category":"Personal Development Project",
+        "image":"website.jpg",
+        "carouselImages":["website.jpg"],
+        "carouselCaptions":["The landing page of the website (but you already knew that)"],
+        "description":"I developed this website as a way to learn ReactJS. I found an open source template online and modified it to serve my purposes. I wanted to take on a new project during one of my co-op terms, but needed to have a foundational understanding of ReactJS to do the job right. Building this website gave me exactly that.",
+        "challenges":"My biggest challenge with this website is one I still haven't really overcome. I don't have much of an education in UI/UX design, so everything I know about it comes from my own personal experience designing websites. For this reason, I'm not sure what the best possible way of formatting the images with the text on this page might be. I want this page to use space efficiently, while not looking too crowded. The current orientation I'm using is my 4th iteration, but I'm not yet satisfied. One thing that makes this task difficult is that each image is not going to be the same size, so depending on which image is in focus there will be extra whitespace. If you have any suggestions, feel free to reach out!",
+        "outcome": "This website helped me to learn the basics of ReactJS leading into a big project as part of my third co-op term. Now, along with my other co-op positions, I have accumulated about 1 years worth of ReactJS development experience. Beyond that, I now have a great place to show off every single professional experience I've had. You can only fit so much on a one page resume.",
+        "type":"Personal",
+        "skills":["Web App Development", "Frontend Development (ReactJS, CSS)", "UI design"]
+      },
+      {
+        "title":"MotorNeuron",
+        "category":"Biomedical Design Project",
+        "image":"motorneuron.jpg",
+        "carouselImages":["motorneuron.jpg"],
+        "carouselCaptions":["Motorneuron MVP"],
+        "description":"In a prototyping and design course I took as part of my biomedical engineering undergraduate degree, I worked with a small team to produce a novel solution to peripheral neuropathy. Peripheral neuropathy is a condition in which damage to the peripheral nervous system causes numbness and pain in the lower limbs and hands. Our solution to this problem was a system in which a pressure sensitive sheet was connected to a foam shoe sole, and vibrating DC motors would generate a stimulus at the thigh corresponding to pressures applied at the foot. By the end of this project, I had learnt valuable lessons about time management, technical report writing, the engineering design process, writing code with the Arduino IDE, collaboration, circuit design, and interdisciplinary work by applying an engineering solution to a physiological problem space.",
+        "challenges":"",
+        "outcome": "We received a very good grade above 90% on this project.",
+        "type":"Academic",
+        "skills":["Engineering Design", "Collaboration", "Technical Writing", "Project Management"]
+      },
+      {
+        "title":"MetricAid Rating Tool",
+        "category":"Proud Feature Add",
+        "image":"ratings.jpg",
+        "carouselImages":["ratings.jpg"],
+        "carouselCaptions":["The reporting page used to view submitted ratings"],
+        "description":"This is the ratings tool I had talked about in the resume section of my website. Depending on where you navigate to the report from, the filter on the right will already be populated with the relevant contextual information. Clicking on the column headers will sort the report based on the contents of that column. Users are automatically prompted to submit rankings at the end of every schedule, but can dismiss these notifications permanently. They also have the option to manually submit a ranking when viewing a list of their schedules elsewhere in the app.",
+        "skills":["Web App Development", "Frontend Development (JS, CSS, HTML)", "Database Management (PostgreSQL)", "Backend Development (Golang)"],
+        "challenges":"I completed this project during my second co-op term in 2020. Unfortunately, I didn't develop this section of the website until 2022. For this reason, I don't remember a specific and technical example of a challenge I faced while completing the project.",
+        "outcome": "This feature is one of my proudest professional accomplishments because of it's outcome. It was initially released to a select few clients, all of which really enjoyed it. Afterwards, we advertised it on a few different occasions in the newsletter I managed, and it later become the third most used feature in the entire application.",
+        "type":"Professional",
+        "link":"https://www.metricaid.com/news/rate-my-schedule"
+      },
+      {
+        "title":"DIY Waterfall Table",
+        "category":"Personal Woodworking Project",
+        "image":"waterfall_table.jpg",
+        "carouselImages":["waterfall_table.jpg", "waterfall_table1.jpg", "waterfall_table2.jpg"],
+        "carouselCaptions":["", "", ""],
+        "description":"I had a leftover slab of live edge walnut from some boards I made as Christmas gifts. I saw this waterfall table in a small shop somewhere and decided to make one. I found some hairpin legs and shelf brackets from a DIY shop and then got to work. I filled a crack in the wood using some wood putty and then cut the wood at a 45 degree angle. I glued the edge of the boards together using an L-shaped jig I made with some scrap wood. Then, I attached the shelf brackets at the joint for added support on the grounds that my student-house roommates might not have the appreciation for handmade furniture that I do. Finally, I attached the legs and finished with several coats of Varathane.",
+        "challenges":"Getting the grain to line up perfectly was challenging. To make sure the bark and sapwood were properly alligned, I first cut the board once at a 45 degree angle, and then cut the edge of one of the boards at another 45 degree angle so that I wouldn't have to flip it around when gluing. I lined up the saw blade with the board about a million times because I didn't have any scrap to practice on and I needed to lose as little material as possible.",
+        "outcome": "This table is one of my favourite pieces. It wasn't the most complicated to make, but I love the way it turned out. However, the wood putty didn't do a great job of fixing the crack. It filled it so that it wasn't easily visible, but it didn't serve as an adhesive to keep it from getting any worse. In the future, I might try experimenting with epoxy, or using a combination of wood glue and sawdust from whatever wood I'm using to fill cracks.",
+        "type":"Personal",
+        "skills":["Power Tools", "Precision cuts", "Filling imperfections"]
+      },
+      {
+        "title":"DIY End Tables",
+        "category":"Personal Woodworking Project",
+        "image":"side_table_diy.jpg",
+        "carouselImages":[],
+        "carouselCaptions":["", "", ""],
+        "description":"The end tables in my bedroom never matched, so I decided to make a set of matching ones. I also have very little storage space in my room, so I decided to build these end tables with sizeable drawers and shelves. I used maple plywood and edgebanding and some hairpin legs. The design consists of one smaller box inside of a larger one to add some dimension to the piece. The inside boxes were put together using pocket holes, and the four sides of the outside box were then glued overtop. The drawer fronts were overlay to the inner box and inset to the outer box, so I got some practice installing both kinds. The drawers were built on soft-close drawer slides.",
+        "challenges":"I learnt from this project that I can't stand working with plywood, and that I don't have the patient or a sharp enough knife to ever want to work with edgebanding again. I don't have a ton of counter space in my garage, so every once in a while I'd drop a piece that was already cut to size and ruin one of this edges. One of the pieces I had dropped was a drawer front. I was able to use this to my advantage when attaching the drawer hardware. I found where I wanted to screw the handles in, and drilled the holes into the imperfect drawer front and clamped it to the good drawer fronts as a guide.",
+        "outcome": "I now have two matching end tables and more storage than I know what to do with. Gone are the days of balancing my phone, tissue box, lamp, and books all on one surface. This was my first crack at building something with a drawer and it worked out very well. The soft-close drawer slides work perfectly. The only issue with the finished project is the weight. I used 3/4 inch plywood for both boxes and the drawer. I like the dimension that comes with both boxes, but if I were to do it again I'd opt for 1/2 inch board.",
+        "type":"Personal",
+        "skills":["Power Tools", "Applying Edge Banding", "Installing drawers"]
+      },
+      
+      {
+        "title":"Computer Desk",
+        "category":"Personal Woodworking Project",
+        "image":"desk.jpg",
+        "carouselImages":["desk.jpg", "desk-blueprint.jpg", "desk-blueprint-trial.jpg"],
+        "carouselCaptions":["Finished desk", "3D model of the finished desk made in Onshape", "3D model of one of my first designs. I didn't end up following through with this because the custom metal frame would be too expensive"],
+        "description":"I wanted an L-shaped desk for my room, but the size I needed wasn't easy to find online. So, I decided to make my own. I designed the desk using Onshape, then bought enough maple to build the desktop and got the three legs already made through my lumber supplier. After prepping the maple using a planar and a skill saw as a jointer, I laminated the boards together with wood glue and biscuits. I then went around the base of the desktop using a 45 degree chamfer bit on my router. Finally, I finished the desktop with about 6 coats of Varathane and attached the legs.",
+        "challenges":"The biggest challenge I faced with this project was that I didn't have a jointer. Having perfectly straight edges on your boards is extremely important when laminating. Without them, you're bound to have gaps between boards and the strength of the bonds will be compromised given less surface area is exposed for the glue. My solution was to use a skill saw and a long and thin board I already knew was straight as a guide. I clamped the guide to one edge of the boards I was jointing, and ran the skill saw across the length of each board.",
+        "outcome": "After finish this project, I'm now more confident I can work with various power tools safely. After making about 9 different mock-ups in OnShape, my CAD modelling skills also received a well needed touch-up. Most importantly, I now have a gorgeous and spacies desk to work on.",
+        "type":"Personal",
+        "skills":["Computer-Aided Design (CAD)", "Preparing Rough Lumber", "Resourcefulness", "Power Tools"]
+      },
+      {
+        "title":"Playground",
+        "category":"Volunteer Work",
+        "image":"playground.jpg",
+        "carouselImages":["playground.jpg"],
+        "carouselCaptions":["Finished playground"],
+        "description":"One of the projects I worked on while on a humanitarian trip in Costa Rica was this playground. The grass in the image used to be dirt, and inside that dirt were large tires filled with concrete to keep them in the ground. Once those were dug out, sod was placed along the ground and the playset was built around it.",
+        "challenges":"The construction work we did was always challenging because of the lack of resources we had to work with. For example, we had very few power tools, and even fewer hand tools in good shape. One day, a few members of the group including myself were made responsible for mixing about 10 large buckets worth of concrete to be poored in holes for the posts and to replace a sidewalk. We didn't have anything to mix with other than a shovel, so the work was manual and took a very long time. To solve this, we carved up a piece of wood to make a sort of blade, and then screwed into the end of a relatively heavy drill. This made us a makeshift apparatus we could use to quickly mix buckets of concrete.",
+        "outcome": "The outcome of our solution to the afformentioned challenge was that we completed a good half days work in just under two hours. The outcome of this project was a much safer space for the elementary school children to play on.",
+        "type":"Volunteer",
+        "skills":["Collaboration", "Landscaping", "Hand Tools", "Power Tools", "Leadership"]
+      }
+    ]
+  }
+}
